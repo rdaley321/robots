@@ -12,13 +12,21 @@
   <body>
     {{#list}}
     <div class="users">
-      <img src="{{avatar}}" alt="avatar">
+      <a href="http://0.0.0.0:3000/{{id}}">
+        <img src="{{avatar}}" alt="avatar">
+      </a>
+      <a href="http://0.0.0.0:3000/{{id}}">
       <h1 class="h1">{{name}}</h1>
+      </a>
       {{#job}}
-      <h2 class="h2">{{job}}, {{company}}</h2>
+      <a href="http://0.0.0.0:3000/{{id}}">
+        <h2 class="h2">{{job}}, {{company}}</h2>
+      </a>
       {{/job}}
       {{^job}}
-      <h3 class="h3">Available for hire</h3>
+      <a href="0.0.0.0:3000/{{username}}">
+        <h3 class="h3">Available for hire</h3>
+      </a>
       {{/job}}
     </div>
     {{/list}}

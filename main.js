@@ -13,6 +13,12 @@ app.get('/', function (req, res) {
   // accessing the users inside the data.js file
     res.render('robots',{list: data.users})
 })
+app.get('/:id', function (req, res) {
+  const user = parseInt(req.params.id) - 1
+  const userId = data.users[user]
+  // accessing the users inside the data.js file
+    res.render('individual',{userId: userId})
+})
 app.listen(3000, function () {
   console.log('Successfully started express application!');
 })
