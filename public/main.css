@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users {
+  flex-basis: 20%;
+  border: 1px solid darkgray;
+  border-radius: 1vw;
+  margin: 2vw;
+  padding: 2vw;
+}
+
+.h1 {
+  color: blue;
+  font-size: 1em;
+}
+
+.h2 {
+  font-size: .8em;
+}
+
+.h3 {
+  color: red;
+  font-size: .8em;
+}
