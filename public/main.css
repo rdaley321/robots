@@ -7,9 +7,23 @@ img {
   max-width: 100%;
 }
 
-body {
+.all-users {
   display: flex;
   flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  background-color: pink;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1em;
 }
 
 .users {
@@ -39,7 +53,7 @@ a {
   text-decoration: none;
 }
 
-#body2 {
+.body2 {
   display: grid;
   padding-top: 10vw;
 }
